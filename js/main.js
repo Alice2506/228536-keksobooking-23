@@ -1,11 +1,21 @@
 // Вспомогательные функции
 
-function getRandomNumber(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+//Функция, возвращающая случайное целое число из переданного диапазона включительно
+let getRandomNumber = function(min, max) {
+  if (min >= 0 && min < max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  } else {
+    console.log('Диапазон отрицательный');
+  }
 }
 
-function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
+
+//Функция, возвращающая случайное число с плавающей точкой из переданного диапазона включительно
+let getRandomArbitrary = function(min, max, n) {
+  let randomArbitrary;
+  if (min >= 0 && min < max) {
+    return randomArbitrary.toFixed(n)(Math.random() * (max - min)) + min;
+  } else {
+    console.log('Диапазон отрицательный');
+  }
 }
