@@ -8,7 +8,7 @@ const getRandomNumber = function(min, max) {
     console.log('Диапазон отрицательный');
     return null;
   }
-}
+};
 
 
 //Функция, возвращающая случайное число с плавающей точкой из переданного диапазона включительно
@@ -20,4 +20,4 @@ const getRandomArbitrary = function(min, max, afterPointMarks) {
     console.log('Диапазон отрицательный');
     return null;
   }
-}
+};
